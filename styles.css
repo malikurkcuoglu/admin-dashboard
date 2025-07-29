@@ -3,3 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+ul li {
+  list-style-type: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 15% 1fr;
+  row-gap: 2rem;
+}
+
+.sidebar {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1/3;
+}
+
+.header {
+  display: grid;
+  border: 1px solid black;
+}
+
+.main {
+  display: grid;
+}

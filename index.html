@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="container">
       <aside class="sidebar">
         <h1 class="heading">Dashboard</h1>
-        <ul class="first-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Messages</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Tasks</a></li>
-          <li><a href="#">Communities</a></li>
-        </ul>
-        <ul class="second-links">
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Privacy</a></li>
-        </ul>
+        <nav>
+          <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Communities</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul class="branding">
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </nav>
       </aside>
 
       <header class="header">
@@ -37,20 +43,18 @@
           <p>Hi there,</p>
           <p>Morgan Oakley (@morgan)</p>
 
-          <nav>
-            <ul>
-              <li><a href="#">New</a></li>
-              <li><a href="#">Upload</a></li>
-              <li><a href="#">Share</a></li>
-            </ul>
-          </nav>
+          <div class="buttons">
+            <a href="#">New</a>
+            <a href="#">Upload</a>
+            <a href="#">Share</a>
+          </div>
         </div>
       </header>
 
       <main class="main">
-        <div>
+        <div class="projects">
           <h2>Your Projects</h2>
-          <artile class="projects">
+          <article>
             <div class="cards">
               <h3>Super Cool Project</h3>
               <p>
@@ -105,11 +109,11 @@
                 quibusdam minima quidem earum voluptas saepe!
               </p>
             </div>
-          </artile>
+          </article>
         </div>
-        <div>
+        <div class="announcements">
           <h2>Announcements</h2>
-          <article class="announcements">
+          <article>
             <div class="announcement">
               <h4>Site Maintenance</h4>
               <p>
@@ -139,9 +143,9 @@
             </div>
           </article>
         </div>
-        <div>
+        <div class="trending">
           <h2>Trending</h2>
-          <article class="trending">
+          <article>
             <div class="profile">
               <img src="" alt="" />
               <p class="tag">@tegan</p>
